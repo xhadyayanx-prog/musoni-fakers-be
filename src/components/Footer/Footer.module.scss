@@ -1,0 +1,126 @@
+.footer {
+  background-color: #041447;
+  background-image: url('https://musoni.co.ke/wp-content/uploads/2025/02/footer-background-image.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 459px 754px;
+}
+
+.main {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.logo {
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.companyName {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.address {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.disclaimer {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.colTitle {
+  color: white;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.link {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  transition: color 0.2s;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.legalItem {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: color 0.2s;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyrightInner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+
+  @media (min-width: 640px) {
+    flex-direction: row;
+  }
+}
+
+.copyrightText {
+  color: #d1d5db;
+  font-size: 0.875rem;
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialLink {
+  color: #d1d5db;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    color: white;
+  }
+}

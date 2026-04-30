@@ -1,0 +1,83 @@
+.section {
+  padding: 4rem 1.5rem;
+  background-color: #041447;
+  background-image: url('https://musoni.co.ke/wp-content/uploads/2025/02/Musoni-white.svg');
+  background-position: left top;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    padding: 5rem 1.5rem;
+  }
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+}
+
+.subheading {
+  color: #d1d5db;
+  font-size: 1rem;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+.milestoneItem {
+  text-align: center;
+}
+
+.numberRow {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-start;
+  gap: 2px;
+}
+
+.number {
+  font-weight: 800;
+  font-size: 2.5rem;
+  color: #fd8d1e;
+  line-height: 1;
+}
+
+.symbol {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #fd8d1e;
+}
+
+.label {
+  color: #d1d5db;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}

@@ -1,0 +1,106 @@
+.section {
+  padding: 2.5rem 1.5rem;
+
+  @media (min-width: 768px) {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 2rem 2.5rem;
+  background-color: #eaefff;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.logoGrid {
+  flex: 1;
+}
+
+.logoRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+
+  &.bordered {
+    border-bottom: 1px solid rgba(4, 20, 71, 0.1);
+  }
+}
+
+.logoItem {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-height: 2.5rem;
+    max-width: 6.25rem;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.textCol {
+  flex: none;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    width: 41.666%;
+    text-align: left;
+  }
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #041447;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+}
+
+.body {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  display: inline-block;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  color: white;
+  background-color: #041447;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}

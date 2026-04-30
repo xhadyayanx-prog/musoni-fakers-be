@@ -1,0 +1,123 @@
+.section {
+  padding: 2.5rem 1.5rem;
+
+  @media (min-width: 768px) {
+    padding: 3.5rem 1.5rem;
+  }
+}
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #041447;
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
+}
+
+.carouselWrap {
+  position: relative;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  background-color: #61bc00;
+  min-height: 220px;
+}
+
+.cardImage {
+  width: 33.33%;
+  flex-shrink: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+  }
+}
+
+.cardContent {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote {
+  color: white;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+}
+
+.author {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #041447;
+}
+
+.prevBtn,
+.nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  border: none;
+
+  &:hover {
+    background-color: #f3f4f6;
+  }
+}
+
+.prevBtn {
+  left: 1rem;
+}
+
+.nextBtn {
+  right: 1rem;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+
+  &.active {
+    background-color: var(--musoni-green);
+  }
+}

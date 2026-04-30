@@ -1,0 +1,273 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --musoni-green: #61bc00;
+    --musoni-orange: #fd8d1e;
+    --musoni-navy: #041447;
+    --musoni-light-blue: #eaefff;
+    --musoni-peach: #ffdfbf;
+  }
+
+  body {
+    font-family: 'DM Sans', 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+.musoni-btn-green  {
+    @apply text-white font-semibold px-6 py-3 rounded-full hover:bg-green-600 transition-colors duration-200 inline-block;
+  }
+.musoni-btn-navy  {
+    @apply text-white font-semibold px-6 py-3 rounded-full hover:bg-blue-900 transition-colors duration-200 inline-block;
+  }
+.musoni-btn-outline-white  {
+    @apply border-2 border-white text-white font-semibold px-6 py-3 rounded-full hover:bg-white transition-colors duration-200 inline-block;
+  }
+.musoni-btn-outline-orange  {
+    @apply border-2 text-white font-semibold px-6 py-3 rounded-full transition-colors duration-200 inline-block;
+  }
+.service-card  {
+    @apply overflow-hidden flex;
+  }
+.nav-link  {
+    @apply text-white transition-colors duration-200 text-sm font-medium;
+  }
+
+  .footer-link {
+    @apply text-gray-300 hover:text-white transition-colors duration-200;
+  }
+}
+
+/* Hero video background */
+.hero-section {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 20, 71, 0.21);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* Navbar */
+.navbar-transparent {
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+.navbar-scrolled {
+  background: rgba(4, 20, 71, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* Carousel */
+.carousel-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Partner logos */
+.partner-logo-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Milestone numbers */
+.milestone-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fd8d1e;
+  line-height: 1;
+}
+
+.milestone-symbol {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fd8d1e;
+}
+
+/* Testimonial card */
+.testimonial-card {
+  background: #61bc00;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  min-height: 200px;
+}
+
+.testimonial-img {
+  width: 33.33%;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+/* Award cards */
+.award-card {
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.award-label {
+  background: #041447;
+  color: white;
+  padding: 1.5rem;
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 0 0 20px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.award-desc {
+  background: white;
+  color: #041447;
+  padding: 1.5rem;
+  width: 66.67%;
+  display: flex;
+  align-items: center;
+  border-radius: 0 20px 20px 0;
+}
+
+/* WhatsApp button */
+.whatsapp-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 9999;
+  background: #2db742;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.whatsapp-label {
+  position: fixed;
+  bottom: 42px;
+  right: 100px;
+  z-index: 9999;
+  background: white;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 13px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  white-space: nowrap;
+}
+
+/* Mobile menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 280px;
+  height: 100vh;
+  background: #041447;
+  z-index: 99999;
+  transition: right 0.3s ease;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.mobile-menu.open {
+  right: 0;
+}
+
+/* Dropdown */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  min-width: 200px;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+}
+
+.dropdown-parent:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.6rem 1rem;
+  color: #041447;
+  font-size: 0.875rem;
+  transition: background 0.15s;
+}
+
+.dropdown-menu a:hover {
+  background: #eaefff;
+  color: #61bc00;
+}
+
+/* Scrolling client logos */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.logo-scroll-track {
+  animation: scroll-left 20s linear infinite;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logo-scroll-track:hover {
+  animation-play-state: paused;
+}
