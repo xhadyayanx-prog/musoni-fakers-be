@@ -14,36 +14,36 @@ const services: ServiceCard[] = [
 {
   title: 'Venture Financing',
   description: 'Scalable funding for high-growth African businesses.',
-  icon: 'https://musoni.co.ke/wp-content/uploads/2025/02/Venture_Financing_Icons.svg',
+  icon: "https://img.rocket.new/generatedImages/rocket_gen_img_1acd53e10-1773052365157.png",
   bgImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1acd53e10-1773052365157.png",
   bgColor: '#041447'
 },
 {
   title: 'Growth & Expansion Loans',
   description: 'Supporting African enterprises looking to scale operations.',
-  icon: 'https://musoni.co.ke/wp-content/uploads/2025/03/Trending_Up.svg',
+  icon: "https://img.rocket.new/generatedImages/rocket_gen_img_1acd53e10-1773052365157.png",
   bgImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1acd53e10-1773052365157.png",
   bgColor: '#041447'
 },
 {
   title: 'Agribusiness Financing',
   description: "Fueling Africa's food security through smart investments.",
-  icon: 'https://musoni.co.ke/wp-content/uploads/2025/02/Vector.svg',
+  icon: "https://img.rocket.new/generatedImages/rocket_gen_img_12112a0d3-1776155105196.png",
   bgImage: "https://img.rocket.new/generatedImages/rocket_gen_img_12112a0d3-1776155105196.png",
   bgColor: '#041447'
 },
 {
   title: 'Trade & Asset Financing',
   description: 'Unlocking capital for businesses needing liquidity or equipment.',
-  icon: 'https://musoni.co.ke/wp-content/uploads/2025/02/Trade-Asset-Financing-Icon.svg',
-  bgImage: "https://img.rocket.new/generatedImages/rocket_gen_img_153df17cb-1777581410962.png",
+  icon: "https://img.rocket.new/generatedImages/rocket_gen_img_18f96636a-1777582400690.png",
+  bgImage: "https://img.rocket.new/generatedImages/rocket_gen_img_18f96636a-1777582400690.png",
   bgColor: '#041447'
 },
 {
   title: 'Impact & Sustainable Finance',
   description: 'Funding ventures with a strong economic and social footprint.',
-  icon: 'https://musoni.co.ke/wp-content/uploads/2025/02/Impac-Sustainable-Finance-Icon.svg',
-  bgImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1df144124-1777581411371.png",
+  icon: "https://img.rocket.new/generatedImages/rocket_gen_img_1b8aad493-1777582401257.png",
+  bgImage: "https://img.rocket.new/generatedImages/rocket_gen_img_1b8aad493-1777582401257.png",
   bgColor: '#041447'
 }];
 

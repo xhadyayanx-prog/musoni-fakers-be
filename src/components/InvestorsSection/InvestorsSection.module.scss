@@ -14,7 +14,7 @@
 .card {
   border-radius: 20px;
   padding: 2rem 2.5rem;
-  background-color: #eaefff;
+  background-color: #e8f5eb;
 }
 
 .row {
@@ -40,7 +40,7 @@
   padding: 1rem 0;
 
   &.bordered {
-    border-bottom: 1px solid rgba(4, 20, 71, 0.1);
+    border-bottom: 1px solid rgba(26, 46, 26, 0.1);
   }
 }
 
@@ -78,7 +78,7 @@
   font-size: 1.875rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #041447;
+  color: #1a2e1a;
 
   @media (min-width: 768px) {
     font-size: 2.25rem;
@@ -97,7 +97,7 @@
   padding: 1rem 2rem;
   border-radius: 9999px;
   color: white;
-  background-color: #041447;
+  background-color: #1a2e1a;
   transition: opacity 0.2s;
 
   &:hover {

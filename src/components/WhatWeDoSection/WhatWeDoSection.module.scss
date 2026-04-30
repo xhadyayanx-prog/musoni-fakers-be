@@ -20,7 +20,7 @@
   font-size: 1.875rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #041447;
+  color: #1a2e1a;
 
   @media (min-width: 768px) {
     font-size: 2.25rem;
@@ -60,7 +60,7 @@
   display: flex;
   border-radius: 20px;
   overflow: hidden;
-  background-color: #041447;
+  background-color: #1a2e1a;
 }
 
 .cardImage {
@@ -101,7 +101,7 @@
 
 .cardCta {
   display: inline-block;
-  background-color: var(--musoni-green);
+  background-color: #2db54a;
   color: white;
   font-size: 0.75rem;
   font-weight: 600;
@@ -111,7 +111,7 @@
   align-self: flex-start;
 
   &:hover {
-    background-color: #4da000;
+    background-color: #25a040;
   }
 }
 
@@ -120,7 +120,7 @@
   padding: 2rem;
   display: flex;
   align-items: center;
-  background-color: #fd8d1e;
+  background-color: #d4a017;
 
   p {
     color: white;

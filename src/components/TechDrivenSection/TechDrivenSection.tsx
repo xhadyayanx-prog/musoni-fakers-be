@@ -21,13 +21,13 @@ export default function TechDrivenSection() {
           </div>
           <div className={styles?.imageCol}>
             <img
-              src="https://musoni.co.ke/wp-content/uploads/2025/03/Tech-Driven-Finance-3.gif"
+              src="https://img.rocket.new/generatedImages/rocket_gen_img_16193bca4-1767091768072.png"
               alt="Tech-Driven Finance illustration showing digital financial services"
-              className={styles?.gif}
-            />
+              className={styles?.gif} />
+
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
