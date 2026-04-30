@@ -40,11 +40,7 @@
   gap: 3rem;
 
   @media (min-width: 640px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1024px) {
-    grid-template-columns: 2fr 1.5fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
 }
@@ -68,11 +64,6 @@
 }
 
 .contactCol {
-  display: flex;
-  flex-direction: column;
-}
-
-.socialCol {
   display: flex;
   flex-direction: column;
 }
@@ -113,41 +104,6 @@
   color: #2db54a;
   flex-shrink: 0;
   margin-top: 2px;
-}
-
-.socialGrid {
-  display: flex;
-  flex-direction: column;
-  gap: 0.625rem;
-}
-
-.socialCard {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.625rem 1rem;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.875rem;
-  transition: all 0.2s;
-
-  svg {
-    color: #2db54a;
-    flex-shrink: 0;
-  }
-
-  &:hover {
-    background: rgba(45, 181, 74, 0.15);
-    border-color: rgba(45, 181, 74, 0.3);
-    color: #ffffff;
-    transform: translateX(4px);
-
-    svg {
-      color: #f0c040;
-    }
-  }
 }
 
 .disclaimerBar {
