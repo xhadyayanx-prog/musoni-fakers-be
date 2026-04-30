@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --musoni-green: #61bc00;
-    --musoni-orange: #fd8d1e;
-    --musoni-navy: #041447;
-    --musoni-light-blue: #eaefff;
-    --musoni-peach: #ffdfbf;
+    --musoni-green: #2db54a;
+    --musoni-orange: #d4a017;
+    --musoni-navy: #1a2e1a;
+    --musoni-light-blue: #e8f5eb;
+    --musoni-peach: #fdf3d0;
   }
 
   body {
@@ -115,19 +115,19 @@
 .milestone-number {
   font-size: 2.5rem;
   font-weight: 800;
-  color: #fd8d1e;
+  color: #d4a017;
   line-height: 1;
 }
 
 .milestone-symbol {
   font-size: 1.5rem;
   font-weight: 700;
-  color: #fd8d1e;
+  color: #d4a017;
 }
 
 /* Testimonial card */
 .testimonial-card {
-  background: #61bc00;
+  background: #2db54a;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
@@ -149,7 +149,7 @@
 }
 
 .award-label {
-  background: #041447;
+  background: #1a2e1a;
   color: white;
   padding: 1.5rem;
   width: 33.33%;
@@ -164,7 +164,7 @@
 
 .award-desc {
   background: white;
-  color: #041447;
+  color: #1a2e1a;
   padding: 1.5rem;
   width: 66.67%;
   display: flex;
@@ -209,7 +209,7 @@
   right: -100%;
   width: 280px;
   height: 100vh;
-  background: #041447;
+  background: #1a2e1a;
   z-index: 99999;
   transition: right 0.3s ease;
   padding: 2rem;
@@ -245,14 +245,14 @@
 .dropdown-menu a {
   display: block;
   padding: 0.6rem 1rem;
-  color: #041447;
+  color: #1a2e1a;
   font-size: 0.875rem;
   transition: background 0.15s;
 }
 
 .dropdown-menu a:hover {
   background: #eaefff;
-  color: #61bc00;
+  color: #2db54a;
 }
 
 /* Scrolling client logos */

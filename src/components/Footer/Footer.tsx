@@ -7,124 +7,56 @@ export default function Footer() {
   return (
     <footer className={styles?.footer}>
       <div className={styles?.main}>
-        <div className={styles?.grid}>
-          {/* Column 1: Logo + Address */}
-          <div>
+        <div className={styles?.topRow}>
+          {/* Logo + Tagline */}
+          <div className={styles?.brandCol}>
             <Link href="/">
               <img
-                src="https://musoni.co.ke/wp-content/uploads/2025/02/Muson-Green-White-Logo.svg"
+                src="/assets/images/rwamps-finance-logo-1777582477534.png"
                 alt="Musoni Capital Limited"
-                className={styles?.logo}
-              />
+                className={styles?.logo} />
             </Link>
-            <p className={styles?.companyName}>Musoni Capital Ltd</p>
-            <p className={styles?.address}>
-              Cape Office Park along
-              <br />
-              Ring Road Kilimani, Opp Yaya Centre
-              <br />
-              P.O. Box 25351 - 00100
-              <br />
-              Nairobi, Kenya
-              <br />
-              Tel: 0709761101
-            </p>
-            <p className={styles?.disclaimer}>
-              Musoni Capital Limited is licensed by the Central Bank of Kenya as a Digital Credit Provider.
+            <p className={styles?.tagline}>
+              Empowering Africa&apos;s financial future through technology-driven microfinance.
             </p>
           </div>
 
-          {/* Column 2: Quick Links */}
-          <div>
-            <p className={styles?.colTitle}>Quick Links</p>
-            <div className={styles?.linkList}>
-              <Link href="/company" className={styles?.link}>Company</Link>
-              <Link href="/current-opportunities" className={styles?.link}>Current Opportunities</Link>
-              <Link href="/contacts" className={styles?.link}>Contact Us</Link>
-              <Link href="/contacts#faqs" className={styles?.link}>FAQs</Link>
+          {/* Contact Info */}
+          <div className={styles?.contactCol}>
+            <p className={styles?.colTitle}>Get In Touch</p>
+            <div className={styles?.contactItem}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles?.contactIcon}>
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Cape Office Park, Ring Road Kilimani<br />P.O. Box 25351 - 00100, Nairobi, Kenya</span>
             </div>
-          </div>
-
-          {/* Column 3: Legal */}
-          <div>
-            <p className={styles?.colTitle}>Legal</p>
-            <div className={styles?.linkList}>
-              {['Disclaimer', 'Terms & Conditions', 'Licences', 'Privacy Policy', 'Data Policy']?.map(
-                (item) => (
-                  <span key={item} className={styles?.legalItem}>{item}</span>
-                )
-              )}
+            <div className={styles?.contactItem}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className={styles?.contactIcon}>
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5.05 2 2 0 0 1 3.58 3h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <span>0709 761 101</span>
             </div>
           </div>
         </div>
+
+        {/* Disclaimer */}
+        <div className={styles?.disclaimerBar}>
+          <p className={styles?.disclaimer}>
+            Musoni Capital Limited is licensed by the Central Bank of Kenya as a Digital Credit Provider.
+          </p>
+        </div>
       </div>
+
       {/* Copyright Bar */}
       <div className={styles?.copyright}>
         <div className={styles?.copyrightInner}>
           <p className={styles?.copyrightText}>
             &copy; 2026 Musoni Capital Limited. All Rights Reserved
           </p>
-          <ul className={styles?.socialList}>
-            <li>
-              <a
-                href="https://x.com/MusoniKenya"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles?.socialLink}
-                aria-label="X Twitter"
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.259 5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/musoni.kenya/about"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles?.socialLink}
-                aria-label="Facebook"
-              >
-                <i className="fa fa-linkedin" style={{ fontSize: '18px' }} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/@musonimicrofinance6395"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles?.socialLink}
-                aria-label="YouTube"
-              >
-                <i className="fa fa-youtube-play" style={{ fontSize: '18px' }} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/musoni_microfinance/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles?.socialLink}
-                aria-label="Instagram"
-              >
-                <i className="fa fa-instagram" style={{ fontSize: '18px' }} />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tiktok.com/@musoni_microfinance"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles?.socialLink}
-                aria-label="TikTok"
-              >
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z" />
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <p className={styles?.copyrightRight}>
+            Regulated by the Central Bank of Kenya
+          </p>
         </div>
       </div>
     </footer>

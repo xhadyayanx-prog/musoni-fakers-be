@@ -4,11 +4,11 @@
 
 // CSS Custom Properties (Design Tokens)
 :root {
-  --musoni-green: #61bc00;
-  --musoni-orange: #fd8d1e;
-  --musoni-navy: #041447;
-  --musoni-light-blue: #eaefff;
-  --musoni-peach: #ffdfbf;
+  --musoni-green: #2db54a;
+  --musoni-orange: #d4a017;
+  --musoni-navy: #1a2e1a;
+  --musoni-light-blue: #e8f5eb;
+  --musoni-peach: #fdf3d0;
   --font-primary: 'DM Sans', 'Open Sans', sans-serif;
 }
 
@@ -132,13 +132,13 @@ button {
   a {
     display: block;
     padding: 0.6rem 1rem;
-    color: #041447;
+    color: #1a2e1a;
     font-size: 0.875rem;
     transition: background 0.15s;
 
     &:hover {
-      background: #eaefff;
-      color: #61bc00;
+      background: #e8f5eb;
+      color: #2db54a;
     }
   }
 }
@@ -160,7 +160,7 @@ button {
   right: -100%;
   width: 280px;
   height: 100vh;
-  background: #041447;
+  background: #1a2e1a;
   z-index: 99999;
   transition: right 0.3s ease;
   padding: 2rem;
@@ -182,7 +182,7 @@ button {
 }
 
 .award-label {
-  background: #041447;
+  background: #1a2e1a;
   color: white;
   padding: 1.5rem;
   width: 33.33%;
@@ -197,7 +197,7 @@ button {
 
 .award-desc {
   background: white;
-  color: #041447;
+  color: #1a2e1a;
   padding: 1.5rem;
   width: 66.67%;
   display: flex;

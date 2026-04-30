@@ -10,25 +10,25 @@ interface Testimonial {
 }
 
 const testimonials: Testimonial[] = [
-  {
-    quote: "Musoni's investment helped our agribusiness scale production by 300% in just 2 years",
-    author: 'John Kamau, Founder, GreenHarvest Africa',
-    image: 'https://musoni.co.ke/wp-content/uploads/2025/03/environment-smile-portrait-man-farm-sustainability-agriculture-nature-ecology-happy-peace-sunset-with-face-male-farmer-countryside-field-summer-health-calm-1-2.svg',
-    imageAlt: 'John Kamau, farmer and founder of GreenHarvest Africa smiling in a field',
-  },
-  {
-    quote: "With Musoni's support, we expanded our tech startup to five African markets",
-    author: 'Aisha Mwale, CEO, FinTech Solutions Ltd.',
-    image: 'https://musoni.co.ke/wp-content/uploads/2025/03/team-young-african-people-office-1-1-1.svg',
-    imageAlt: 'Aisha Mwale, CEO of FinTech Solutions Ltd., standing with her team in an office',
-  },
-  {
-    quote: "With Musoni's support, we expanded our tech startup to five African markets",
-    author: 'Aisha Mwale, CEO, FinTech Solutions Ltd.',
-    image: 'https://musoni.co.ke/wp-content/uploads/2025/03/team-young-african-people-office-1-1-1.svg',
-    imageAlt: 'Aisha Mwale, CEO of FinTech Solutions Ltd., standing with her team in an office',
-  },
-];
+{
+  quote: "Musoni's investment helped our agribusiness scale production by 300% in just 2 years",
+  author: 'John Kamau, Founder, GreenHarvest Africa',
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1538b0d85-1772983812009.png",
+  imageAlt: 'John Kamau, farmer and founder of GreenHarvest Africa smiling in a field'
+},
+{
+  quote: "With Musoni's support, we expanded our tech startup to five African markets",
+  author: 'Aisha Mwale, CEO, FinTech Solutions Ltd.',
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1bfac52ab-1775724310829.png",
+  imageAlt: 'Aisha Mwale, CEO of FinTech Solutions Ltd., standing with her team in an office'
+},
+{
+  quote: "With Musoni's support, we expanded our tech startup to five African markets",
+  author: 'Aisha Mwale, CEO, FinTech Solutions Ltd.',
+  image: "https://img.rocket.new/generatedImages/rocket_gen_img_1bfac52ab-1775724310829.png",
+  imageAlt: 'Aisha Mwale, CEO of FinTech Solutions Ltd., standing with her team in an office'
+}];
+
 
 export default function TestimonialsSection() {
   const [current, setCurrent] = useState(0);
@@ -45,8 +45,8 @@ export default function TestimonialsSection() {
             <div className={styles.cardImage}>
               <img
                 src={testimonials[current].image}
-                alt={testimonials[current].imageAlt}
-              />
+                alt={testimonials[current].imageAlt} />
+
             </div>
             <div className={styles.cardContent}>
               <p className={styles.quote}>{testimonials[current].quote}</p>
@@ -65,16 +65,16 @@ export default function TestimonialsSection() {
           </button>
         </div>
         <div className={styles.dots}>
-          {testimonials.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrent(i)}
-              className={`${styles.dot} ${i === current ? styles.active : ''}`}
-              aria-label={`Go to testimonial ${i + 1}`}
-            />
-          ))}
+          {testimonials.map((_, i) =>
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`${styles.dot} ${i === current ? styles.active : ''}`}
+            aria-label={`Go to testimonial ${i + 1}`} />
+
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }

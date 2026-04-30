@@ -12,7 +12,6 @@ import InvestorsSection from '@/components/InvestorsSection/InvestorsSection';
 import PioneersSection from '@/components/PioneersSection/PioneersSection';
 import GetInTouchSection from '@/components/GetInTouchSection/GetInTouchSection';
 import Footer from '@/components/Footer/Footer';
-import WhatsAppWidget from '@/components/WhatsAppWidget/WhatsAppWidget';
 
 export default function HomePage() {
   return (
@@ -29,7 +28,6 @@ export default function HomePage() {
       <PioneersSection />
       <GetInTouchSection />
       <Footer />
-      <WhatsAppWidget />
     </main>
   );
 }

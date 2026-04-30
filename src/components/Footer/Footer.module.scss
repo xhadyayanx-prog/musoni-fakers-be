@@ -1,88 +1,130 @@
 .footer {
-  background-color: #041447;
-  background-image: url('https://musoni.co.ke/wp-content/uploads/2025/02/footer-background-image.png');
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: 459px 754px;
+  background: linear-gradient(160deg, #0d3d1a 0%, #1a5c2a 50%, #0d3d1a 100%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 320px;
+    height: 320px;
+    background: radial-gradient(circle, rgba(45, 181, 74, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 40px;
+    left: -60px;
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(circle, rgba(212, 160, 23, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
 }
 
 .main {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 4rem 1.5rem 2rem;
+  position: relative;
+  z-index: 1;
 }
 
-.grid {
+.topRow {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2.5rem;
+  gap: 3rem;
 
-  @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+  @media (min-width: 640px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
   }
 }
 
+.brandCol {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
-  height: 2.5rem;
+  height: 3.5rem;
   margin-bottom: 1.5rem;
+  filter: brightness(1.1);
 }
 
-.companyName {
-  color: white;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-}
-
-.address {
-  color: #d1d5db;
-  font-size: 0.875rem;
+.tagline {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.9rem;
   line-height: 1.7;
-  font-weight: 300;
-  margin-bottom: 1rem;
+  max-width: 320px;
 }
 
-.disclaimer {
-  color: #d1d5db;
+.contactCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.colTitle {
+  color: #f0c040;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2rem;
+    height: 2px;
+    background: #f0c040;
+    border-radius: 2px;
+  }
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.875rem;
   line-height: 1.6;
 }
 
-.colTitle {
-  color: white;
-  font-weight: 700;
-  font-size: 1.25rem;
-  margin-bottom: 1.5rem;
+.contactIcon {
+  color: #2db54a;
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
-.linkList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+.disclaimerBar {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.link {
-  color: #d1d5db;
-  font-size: 0.875rem;
-  transition: color 0.2s;
-
-  &:hover {
-    color: white;
-  }
-}
-
-.legalItem {
-  color: #d1d5db;
-  font-size: 0.875rem;
-  cursor: pointer;
-  transition: color 0.2s;
-
-  &:hover {
-    color: white;
-  }
+.disclaimer {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: center;
+  font-style: italic;
 }
 
 .copyright {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(240, 192, 64, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
 }
 
 .copyrightInner {
@@ -93,34 +135,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 0.5rem;
+  text-align: center;
 
   @media (min-width: 640px) {
     flex-direction: row;
+    text-align: left;
   }
 }
 
 .copyrightText {
-  color: #d1d5db;
-  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.8rem;
 }
 
-.socialList {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.socialLink {
-  color: #d1d5db;
-  transition: color 0.2s;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    color: white;
-  }
+.copyrightRight {
+  color: rgba(240, 192, 64, 0.6);
+  font-size: 0.8rem;
 }

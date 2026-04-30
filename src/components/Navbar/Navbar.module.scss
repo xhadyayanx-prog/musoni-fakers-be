@@ -7,7 +7,7 @@
   transition: all 0.3s ease;
 
   &.scrolled {
-    background-color: #041447;
+    background-color: #1a2e1a;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
 }
@@ -25,7 +25,7 @@
   flex-shrink: 0;
 
   img {
-    height: 2rem;
+    height: 3rem;
     width: auto;
   }
 }
@@ -48,12 +48,12 @@
   transition: color 0.2s;
 
   &:hover {
-    color: var(--musoni-green);
+    color: #d4a017;
   }
 }
 
 .btnApply {
-  background-color: var(--musoni-green);
+  background-color: #2db54a;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -64,12 +64,12 @@
   display: inline-block;
 
   &:hover {
-    background-color: #4da000;
+    background-color: #25a040;
   }
 }
 
 .btnLogin {
-  border: 2px solid var(--musoni-orange);
+  border: 2px solid #d4a017;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -80,7 +80,7 @@
   display: inline-block;
 
   &:hover {
-    background-color: var(--musoni-orange);
+    background-color: #d4a017;
   }
 }
 
@@ -154,7 +154,7 @@
   transition: color 0.2s;
 
   &:hover {
-    color: var(--musoni-green);
+    color: #d4a017;
   }
 }
 
@@ -181,7 +181,7 @@
   transition: color 0.2s;
 
   &:hover {
-    color: var(--musoni-green);
+    color: #d4a017;
   }
 }
 
@@ -193,7 +193,7 @@
 }
 
 .mobileBtnApply {
-  background-color: var(--musoni-green);
+  background-color: #2db54a;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -204,12 +204,12 @@
   display: block;
 
   &:hover {
-    background-color: #4da000;
+    background-color: #25a040;
   }
 }
 
 .mobileBtnLogin {
-  border: 2px solid var(--musoni-orange);
+  border: 2px solid #d4a017;
   color: white;
   font-size: 0.875rem;
   font-weight: 600;
@@ -220,6 +220,6 @@
   display: block;
 
   &:hover {
-    background-color: var(--musoni-orange);
+    background-color: #d4a017;
   }
 }

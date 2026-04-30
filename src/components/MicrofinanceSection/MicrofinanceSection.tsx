@@ -22,13 +22,13 @@ export default function MicrofinanceSection() {
           </div>
           <div className={styles?.imageCol}>
             <img
-              src="https://musoni.co.ke/wp-content/uploads/2025/02/microfinance-musoni-woman.png"
+              src="https://img.rocket.new/generatedImages/rocket_gen_img_11959f411-1763294023945.png"
               alt="Musoni microfinance woman entrepreneur"
-              className={styles?.image}
-            />
+              className={styles?.image} />
+
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }

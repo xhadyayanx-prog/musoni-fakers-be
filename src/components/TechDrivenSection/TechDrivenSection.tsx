@@ -2,6 +2,24 @@
 import React from 'react';
 import styles from './TechDrivenSection.module.scss';
 
+const techImages = [
+{
+  src: "https://img.rocket.new/generatedImages/rocket_gen_img_1c392243f-1772381256803.png",
+  alt: "Mobile banking app on smartphone showing digital payment interface",
+  label: "Mobile Money"
+},
+{
+  src: "https://img.rocket.new/generatedImages/rocket_gen_img_1b09aca67-1772313899728.png",
+  alt: "Data analytics dashboard with financial charts and real-time metrics",
+  label: "Data Insights"
+},
+{
+  src: "https://img.rocket.new/generatedImages/rocket_gen_img_15f47c5aa-1777583238548.png",
+  alt: "Digital loan processing system with fast approval workflow",
+  label: "Instant Loans"
+}];
+
+
 export default function TechDrivenSection() {
   return (
     <section className={styles?.section}>
@@ -20,14 +38,19 @@ export default function TechDrivenSection() {
             </a>
           </div>
           <div className={styles?.imageCol}>
-            <img
-              src="https://musoni.co.ke/wp-content/uploads/2025/03/Tech-Driven-Finance-3.gif"
-              alt="Tech-Driven Finance illustration showing digital financial services"
-              className={styles?.gif}
-            />
+            <div className={styles?.imageGrid}>
+              {techImages?.map((img, idx) =>
+              <div key={idx} className={`${styles?.imageCard} ${idx === 0 ? styles?.imageLarge : styles?.imageSmall}`}>
+                  <img src={img?.src} alt={img?.alt} className={styles?.cardImg} />
+                  <div className={styles?.imageLabel}>
+                    <span>{img?.label}</span>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }
