@@ -1,6 +1,6 @@
 .section {
   padding: 4rem 1.5rem;
-  background-color: #e8f5eb;
+  background: linear-gradient(135deg, #f0faf2 0%, #e8f5eb 60%, #fdf8e8 100%);
   background-image: url('https://musoni.co.ke/wp-content/uploads/2025/02/Tech-Driven-Finance-motif.svg');
   background-position: left top;
   background-repeat: no-repeat;
@@ -19,11 +19,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2.5rem;
+  gap: 3rem;
 
   @media (min-width: 768px) {
     flex-direction: row;
     gap: 4rem;
+    align-items: flex-start;
   }
 }
 
@@ -33,16 +34,16 @@
   order: 2;
 
   @media (min-width: 768px) {
-    width: 41.666%;
+    width: 42%;
     order: 1;
   }
 }
 
 .heading {
   font-size: 1.875rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 1.5rem;
-  color: #1a2e1a;
+  color: #0d3d1a;
 
   @media (min-width: 768px) {
     font-size: 2.25rem;
@@ -58,32 +59,92 @@
 
 .cta {
   display: inline-block;
-  background-color: #2db54a;
+  background: linear-gradient(135deg, #2db54a 0%, #1a9a38 100%);
   color: white;
-  font-weight: 600;
-  padding: 1rem 2rem;
+  font-weight: 700;
+  padding: 1rem 2.25rem;
   border-radius: 9999px;
   margin-top: 1rem;
-  transition: background-color 0.2s;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(45, 181, 74, 0.35);
 
   &:hover {
-    background-color: #25a040;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(45, 181, 74, 0.45);
   }
 }
 
 .imageCol {
   flex: 1;
   order: 1;
-  display: flex;
-  justify-content: flex-end;
+  width: 100%;
 
   @media (min-width: 768px) {
     order: 2;
   }
 }
 
-.gif {
+.imageGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.875rem;
+}
+
+.imageCard {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.25s, box-shadow 0.25s;
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  }
+}
+
+.imageLarge {
+  grid-column: 1 / -1;
+
+  .cardImg {
+    height: 180px;
+
+    @media (min-width: 480px) {
+      height: 210px;
+    }
+  }
+}
+
+.imageSmall {
+  .cardImg {
+    height: 140px;
+
+    @media (min-width: 480px) {
+      height: 160px;
+    }
+  }
+}
+
+.cardImg {
   width: 100%;
-  max-width: 42rem;
-  object-fit: contain;
+  object-fit: cover;
+  display: block;
+}
+
+.imageLabel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.625rem 0.875rem;
+  background: linear-gradient(to top, rgba(13, 61, 26, 0.88) 0%, transparent 100%);
+
+  span {
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
 }
